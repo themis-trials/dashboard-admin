@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Themis Trials · Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="documentation.css" />
+  </head>
+  <body>
+    <div class="docs-layout">
+      <aside class="sidebar">
+        <a class="brand" href="#top" aria-label="Themis Trials, accueil de la documentation">
+          <span class="brand__mark">T<span>.</span></span>
+          <span class="brand__text">
+            <strong>Themis Trials</strong>
+            <small>Documentation interne</small>
+          </span>
+        </a>
+
+        <div class="sidebar__rule"></div>
+
+        <nav class="navigation" aria-label="Navigation principale">
+          <p class="navigation__label">GÉNÉRAL</p>
+          <a class="navigation__link is-active" href="#presentation"><span class="navigation__number">01</span> Présentation</a>
+          <a class="navigation__link" href="#environnements"><span class="navigation__number">02</span> Environnements</a>
+
+          <p class="navigation__label">ORGANISATION</p>
+          <a class="navigation__link" href="#arborescence"><span class="navigation__number">03</span> Arborescence</a>
+          <a class="navigation__link" href="#conventions"><span class="navigation__number">04</span> Conventions</a>
+          <a class="navigation__link" href="#commentaires"><span class="navigation__number">05</span> Commentaires</a>
+          <a class="navigation__link" href="#ressources"><span class="navigation__number">06</span> Ressources réutilisables</a>
+
+          <p class="navigation__label">MÉTHODE</p>
+          <a class="navigation__link" href="#developpement"><span class="navigation__number">06</span> Développer un outil</a>
+
+          <p class="navigation__label">RÉFÉRENCE</p>
+          <a class="navigation__link" href="#prompts">
+            <span class="navigation__number">09</span>
+            Prompts ChatGPT
+          </a>
+        </nav>
+
+        <div class="sidebar__footer">
+          <span class="status-dot"></span>
+          <span>Documentation personnelle</span>
+          <span class="sidebar__version">v1.0</span>
+        </div>
+      </aside>
+
+      <main class="main-content" id="top">
+        <div class="content-wrap">
+          <section class="page-intro" id="presentation">
+            <p class="eyebrow"><span class="eyebrow__line"></span> DOCUMENTATION DU PROJET</p>
+            <h1>THEMIS TRIALS<br /><span>Dashboard et documentation</span></h1>
+            <p class="page-intro__lead">
+              Les repères techniques, les conventions et les méthodes de travail du dashboard administratif de
+              <strong>Themis Trials</strong>, réunis au même endroit.
+            </p>
+          </section>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">01 — OBJECTIF</p>
+                <h2>À quoi sert cette documentation ?</h2>
+              </div>
+              <span class="section-index">01</span>
+            </div>
+            <p class="body-copy">
+              Cette documentation sert de point de référence pour concevoir, organiser, maintenir et faire évoluer les outils du projet. Elle rassemble les informations utiles pour retrouver
+              rapidement une décision, comprendre l’organisation des fichiers et reprendre le travail sans repartir de zéro.
+            </p>
+          </section>
+
+          <section class="section-block" id="environnements">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">02 — ENVIRONNEMENTS</p>
+                <h2>Un projet, plusieurs contextes.</h2>
+              </div>
+              <span class="section-index">02</span>
+            </div>
+            <p class="body-copy">Chaque environnement a son rôle. Les distinguer permet de savoir où modifier, tester et publier un élément.</p>
+
+            <div class="environment-list">
+              <article class="environment-row">
+                <div class="environment-row__icon">LOC</div>
+                <div class="environment-row__body">
+                  <h3>Local</h3>
+                  <p>Développement et tests sur l’ordinateur, avant toute mise en ligne.</p>
+                </div>
+                <span class="environment-row__type">Développement</span>
+              </article>
+              <article class="environment-row">
+                <div class="environment-row__icon">GH</div>
+                <div class="environment-row__body">
+                  <h3>GitHub</h3>
+                  <p>Historique du code, sauvegarde et, si adapté, hébergement des pages statiques.</p>
+                </div>
+                <span class="environment-row__type">Versionnement</span>
+              </article>
+              <article class="environment-row">
+                <div class="environment-row__icon">PHP</div>
+                <div class="environment-row__body">
+                  <h3>Infomaniak</h3>
+                  <p>Hébergement des ressources serveur, notamment les scripts PHP et les données associées.</p>
+                </div>
+                <span class="environment-row__type">Serveur</span>
+              </article>
+              <article class="environment-row">
+                <div class="environment-row__icon">FA</div>
+                <div class="environment-row__body">
+                  <h3>Forumactif</h3>
+                  <p>Intégration des scripts, styles et éléments directement dans le forum.</p>
+                </div>
+                <span class="environment-row__type">Intégration</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-block" id="arborescence">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">03 — ORGANISATION</p>
+                <h2>Arborescence du projet</h2>
+              </div>
+              <span class="section-index">03</span>
+            </div>
+
+            <p class="body-copy">
+              Le projet est organisé par responsabilités : les outils, les ressources partagées, le code serveur et les adaptations propres à chaque environnement disposent de leurs propres espaces.
+              Cette séparation facilite la maintenance, limite les duplications et permet de faire évoluer chaque partie indépendamment.
+            </p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>STRUCTURE DU PROJET</span>
+                <span class="code-panel__language">DOSSIERS / FICHIERS</span>
+              </div>
+              <pre><code>themis-outils/
+│
+├── docs/
+│   └── Documentation du projet
+│
+├── tools/
+│   ├── rp-generator/
+│   │   ├── index.php
+│   │   ├── style.scss
+│   │   ├── script.js
+│   │   └── README.md
+│   │
+│   ├── pokemon-capture/
+│   │   ├── index.php
+│   │   ├── style.scss
+│   │   ├── script.js
+│   │   └── README.md
+│   │
+│   ├── moderation/
+│   └── shop/
+│
+├── shared/
+│   ├── scss/
+│   │   ├── _variables.scss
+│   │   ├── _mixins.scss
+│   │   ├── _functions.scss
+│   │   └── _base.scss
+│   │
+│   └── js/
+│       └── helpers.js
+│
+├── server/
+│   ├── api/
+│   ├── config/
+│   ├── includes/
+│   └── data/
+│
+├── environments/
+│   ├── local/
+│   └── forumactif/
+│
+└── .gitignore</code></pre>
+              <p class="code-panel__note">Structure de référence : les fichiers sont ajoutés au fur et à mesure des besoins réels de chaque outil.</p>
+            </div>
+
+            <h3>Les dossiers principaux</h3>
+
+            <div class="detail-list">
+              <article class="detail-item">
+                <h4><code>docs/</code> — Documentation</h4>
+                <p>
+                  Contient la documentation générale du projet : arborescence, conventions de nommage, organisation du code, procédures de développement, tests, publication et maintenance. Elle sert
+                  de référence pour retrouver les décisions prises et les méthodes utilisées.
+                </p>
+              </article>
+
+              <article class="detail-item">
+                <h4><code>tools/</code> — Outils</h4>
+                <p>
+                  Contient un sous-dossier par fonctionnalité du projet. Chaque outil regroupe ses fichiers principaux : interface, styles, logique JavaScript et, si nécessaire, documentation
+                  spécifique.
+                </p>
+                <p>
+                  Par exemple, <code>tools/rp-generator/</code> regroupe les fichiers propres au générateur de RP. Cette organisation permet de travailler sur un outil sans avoir à rechercher ses
+                  fichiers dans plusieurs dossiers génériques.
+                </p>
+                <p>
+                  Un fichier ne doit être placé dans le dossier d'un outil que s'il lui appartient spécifiquement. Les fonctions réutilisées par plusieurs outils sont placées dans
+                  <code>shared/</code>.
+                </p>
+              </article>
+
+              <article class="detail-item">
+                <h4><code>shared/</code> — Ressources communes</h4>
+                <p>Regroupe les ressources utilisées par plusieurs outils. L'objectif est de centraliser les éléments communs afin d'éviter de maintenir plusieurs copies d'un même code.</p>
+                <ul>
+                  <li><code>shared/scss/</code> : variables de thème, mixins, fonctions SCSS et styles de base communs.</li>
+                  <li><code>shared/js/</code> : fonctions utilitaires JavaScript génériques et réutilisables.</li>
+                </ul>
+                <p>
+                  Une fonction qui ne sert qu'à un seul outil reste dans cet outil. Elle ne devient une ressource commune que lorsqu'elle est réellement réutilisée ou qu'une mutualisation est
+                  justifiée.
+                </p>
+              </article>
+
+              <article class="detail-item">
+                <h4><code>server/</code> — Code serveur</h4>
+                <p>
+                  Contient le code PHP exécuté côté serveur, notamment sur l'hébergement Infomaniak. Il centralise les traitements qui ne doivent pas être exécutés directement dans le navigateur et
+                  les ressources auxquelles plusieurs outils peuvent accéder.
+                </p>
+                <ul>
+                  <li><code>server/api/</code> : points d'entrée permettant aux interfaces de demander des données ou de déclencher des traitements serveur.</li>
+                  <li><code>server/config/</code> : paramètres de configuration et correspondances nécessaires au fonctionnement du projet.</li>
+                  <li><code>server/includes/</code> : fonctions PHP communes, vérifications, authentification et autres traitements réutilisables.</li>
+                  <li><code>server/data/</code> : fichiers de données utilisés par le serveur, par exemple des fichiers JSON.</li>
+                </ul>
+                <p>Les données sensibles et les secrets de configuration ne doivent pas être exposés dans le code envoyé au navigateur ni publiés dans un dépôt Git accessible publiquement.</p>
+              </article>
+
+              <article class="detail-item">
+                <h4><code>environments/</code> — Environnements</h4>
+                <p>
+                  Regroupe les adaptations nécessaires au fonctionnement des outils selon la plateforme utilisée. L'objectif est de conserver une logique commune lorsque c'est possible, tout en
+                  isolant les contraintes propres à chaque environnement.
+                </p>
+                <ul>
+                  <li><code>environments/local/</code> : éléments spécifiques à l'exécution et aux tests en local.</li>
+                  <li><code>environments/forumactif/</code> : scripts, adaptations et intégrations nécessaires au fonctionnement sur le forum Forumactif.</li>
+                </ul>
+                <p>
+                  Ces dossiers ne doivent pas devenir une seconde copie complète de chaque outil. Ils accueillent uniquement les éléments qui diffèrent selon la plateforme ou qui ne peuvent pas être
+                  mutualisés directement.
+                </p>
+              </article>
+
+              <article class="detail-item">
+                <h4><code>.gitignore</code> — Fichiers exclus de Git</h4>
+                <p>
+                  Définit les fichiers et dossiers que Git ne doit pas suivre, par exemple certains fichiers temporaires, journaux, configurations locales ou secrets. Il doit être adapté au projet et
+                  ne remplace pas une gestion sécurisée des données sensibles.
+                </p>
+              </article>
+            </div>
+
+            <h3>Organisation des fichiers d'un outil</h3>
+
+            <p class="body-copy">Les noms de fichiers ci-dessous constituent une convention de départ. Tous les outils ne sont pas obligés de posséder exactement les mêmes fichiers.</p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>EXEMPLE — GÉNÉRATEUR DE RP</span>
+                <span class="code-panel__language">FICHIERS</span>
+              </div>
+              <pre><code>tools/rp-generator/
+├── index.php
+├── style.scss
+├── script.js
+└── README.md</code></pre>
+            </div>
+
+            <ul>
+              <li><code>index.php</code> : structure de la page et génération éventuelle du HTML côté serveur. Pour un outil purement statique, un fichier <code>index.html</code> peut suffire.</li>
+              <li><code>style.scss</code> : styles propres à l'outil. Il importe les variables, mixins et autres ressources communes dont il a besoin.</li>
+              <li><code>script.js</code> : logique JavaScript propre à l'outil : interactions, événements, traitement des entrées et affichage des résultats.</li>
+              <li><code>README.md</code> : notes techniques propres à l'outil : objectif, dépendances, fonctionnement particulier, points de vigilance et procédure de mise à jour.</li>
+            </ul>
+
+            <h3>Règles de partage du code</h3>
+
+            <p class="body-copy">
+              Le code est mutualisé lorsqu'il peut réellement être utilisé dans plusieurs contextes sans créer de dépendance inutile. La mutualisation ne doit pas rendre les outils plus difficiles à
+              comprendre ou à déboguer.
+            </p>
+
+            <ul>
+              <li>
+                <strong>SCSS :</strong> les variables, mixins et styles communs sont centralisés dans <code>shared/scss/</code>. Chaque outil conserve son propre fichier SCSS et importe les ressources
+                nécessaires.
+              </li>
+              <li>
+                <strong>JavaScript :</strong> les fonctions génériques peuvent être centralisées dans <code>shared/js/</code>. Les règles métier et les interactions propres à un outil restent dans son
+                dossier.
+              </li>
+              <li>
+                <strong>PHP :</strong> les fonctions serveur communes sont placées dans <code>server/includes/</code>, tandis que les points d'entrée des API sont rangés dans <code>server/api/</code>.
+              </li>
+              <li><strong>Environnements :</strong> la logique métier commune doit être séparée des adaptations nécessaires au navigateur local ou à Forumactif.</li>
+            </ul>
+
+            <h3>Points de vigilance</h3>
+
+            <ul>
+              <li>Ne pas créer un fichier ou un dossier simplement pour remplir l'arborescence : il doit répondre à un besoin concret.</li>
+              <li>Ne pas dupliquer une fonction dans plusieurs outils si elle peut être partagée sans complexité excessive.</li>
+              <li>
+                Ne pas déplacer du code dans <code>shared/</code> uniquement parce qu'il ressemble à du code commun : vérifier d'abord qu'il possède le même rôle et le même comportement dans les
+                différents outils.
+              </li>
+              <li>Vérifier les chemins d'importation après tout déplacement de fichier, notamment les imports SCSS, les scripts JavaScript et les appels aux API.</li>
+              <li>
+                Les scripts destinés à Forumactif peuvent être soumis à des contraintes d'intégration différentes de celles d'une page locale. Un module JavaScript partagé ne peut pas nécessairement
+                être importé directement depuis le forum. Il faut donc définir une méthode fiable de distribution ou de synchronisation.
+              </li>
+              <li>
+                Distinguer le code source des fichiers générés, compilés ou déployés. Par exemple, le SCSS est le fichier source des styles, tandis que le CSS compilé est le fichier chargé par la
+                page.
+              </li>
+            </ul>
+
+            <p class="body-copy">
+              <strong>Principe général :</strong> chaque fichier doit avoir un emplacement évident, une responsabilité identifiable et une seule source de vérité lorsque son contenu est partagé.
+              L'arborescence doit évoluer avec les besoins réels du projet, et non l'inverse.
+            </p>
+          </section>
+
+          <section class="section-block" id="conventions">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">04 — CONVENTIONS</p>
+                <h2>Des règles simples, toujours les mêmes.</h2>
+              </div>
+              <span class="section-index">04</span>
+            </div>
+
+            <p class="body-copy">
+              Des conventions communes permettent de garder un code lisible, cohérent et facile à maintenir. Elles s'appliquent à tous les outils, sauf contrainte technique particulière.
+            </p>
+
+            <div class="convention-table">
+              <div class="convention-table__row convention-table__head">
+                <span>ÉLÉMENT</span>
+                <span>CONVENTION</span>
+                <span>EXEMPLE</span>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Fichiers et dossiers</span>
+                <span>Minuscules, mots séparés par des tirets</span>
+                <code>rp-generator.js</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Blocs CSS</span>
+                <span>Nom représentant un composant ou une zone autonome</span>
+                <code>.tool-card</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Éléments CSS</span>
+                <span>Deux underscores <code>__</code> entre le bloc et son élément</span>
+                <code>.tool-card__title</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Variantes CSS</span>
+                <span>Deux tirets <code>--</code> entre le bloc et sa variante</span>
+                <code>.tool-card--featured</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>États CSS</span>
+                <span>Classe explicite décrivant l'état</span>
+                <code>.is-active</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Attributs JavaScript</span>
+                <span>Attributs <code>data-*</code> pour cibler ou configurer un élément</span>
+                <code>data-tool</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Variables et fonctions JS</span>
+                <span><code>camelCase</code></span>
+                <code>getPokemonName()</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Constantes JS</span>
+                <span><code>UPPER_SNAKE_CASE</code> pour les constantes globales ou de configuration</span>
+                <code>API_URL</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Variables SCSS</span>
+                <span>Préfixe <code>$</code>, noms en minuscules avec tirets</span>
+                <code>$color-primary</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Mixins SCSS</span>
+                <span><code>camelCase</code> ou noms avec tirets, selon une convention unique dans le projet</span>
+                <code>@include flex-center;</code>
+              </div>
+            </div>
+
+            <h3>Nomenclature BEM</h3>
+
+            <p class="body-copy">
+              Les classes CSS suivent la convention BEM : un bloc autonome, des éléments rattachés à ce bloc avec <code>__</code> et des variantes identifiées avec <code>--</code>.
+            </p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>EXEMPLE — COMPOSANT</span>
+                <span class="code-panel__language">HTML / CSS</span>
+              </div>
+              <pre><code>&lt;article class="tool-card tool-card--featured"&gt;
+  &lt;h2 class="tool-card__title"&gt;Générateur de RP&lt;/h2&gt;
+  &lt;p class="tool-card__description"&gt;Description de l'outil&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+              <p class="code-panel__note">.tool-card = bloc · .tool-card__title = élément · .tool-card--featured = variante</p>
+            </div>
+
+            <h3>Règles d'utilisation</h3>
+
+            <ul>
+              <li>Utiliser des noms explicites et cohérents avec le rôle de l'élément.</li>
+              <li>Réserver <code>__</code> aux éléments appartenant à un bloc BEM ; ne pas l'utiliser comme séparateur générique.</li>
+              <li>Utiliser <code>--</code> pour une variante visuelle ou fonctionnelle d'un bloc, et non pour un état temporaire.</li>
+              <li>Préférer des classes d'état explicites comme <code>.is-active</code> ou <code>.is-disabled</code> lorsque l'état est géré dynamiquement.</li>
+              <li>Utiliser les attributs <code>data-*</code> pour les besoins JavaScript, plutôt que de dépendre d'une classe purement visuelle.</li>
+              <li>Garder la même convention de nommage dans tous les outils et éviter les abréviations difficiles à comprendre.</li>
+            </ul>
+          </section>
+
+          <section class="section-block" id="commentaires">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">05 — COMMENTAIRES</p>
+                <h2>Structurer le code sans le surcharger.</h2>
+              </div>
+              <span class="section-index">05</span>
+            </div>
+
+            <p class="body-copy">
+              Les commentaires permettent de structurer les fichiers, de repérer rapidement les grandes parties du code et d'expliquer les comportements qui nécessitent un contexte supplémentaire. Une
+              nomenclature commune facilite la lecture et la maintenance de tous les outils.
+            </p>
+
+            <div class="convention-table">
+              <div class="convention-table__row convention-table__head">
+                <span>SYNTAXE</span>
+                <span>UTILISATION</span>
+                <span>EXEMPLE</span>
+              </div>
+
+              <div class="convention-table__row">
+                <span>En-tête de fichier</span>
+                <span>Identifier le projet et le rôle du fichier</span>
+                <code>// THEMIS TRIALS — GÉNÉRATEUR RP</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span><code>// =</code></span>
+                <span>Introduire une grande section fonctionnelle</span>
+                <code>// = Configuration.</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span><code>// &gt;</code></span>
+                <span>Introduire un sous-bloc ou une étape dans une section</span>
+                <code>// &gt; Récupération des données.</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span><code>//</code></span>
+                <span>Ajouter une explication ponctuelle au code</span>
+                <code>// Vérifie que l'élément existe.</code>
+              </div>
+
+              <div class="convention-table__row">
+                <span>Commentaire de fin</span>
+                <span>Préciser la fermeture d'un bloc lorsque cela améliore la lisibilité</span>
+                <code>// = Fin de l'initialisation.</code>
+              </div>
+            </div>
+
+            <h3>Nomenclature des sections</h3>
+
+            <p class="body-copy">Les grandes sections sont introduites avec <code>// =</code>. Elles sont séparées du code par une ligne vide et portent un intitulé court décrivant leur rôle.</p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>EXEMPLE — SECTION</span>
+                <span class="code-panel__language">JavaScript</span>
+              </div>
+              <pre><code>// = Configuration.
+const API_URL = "../api/rp_api.php";
+const MAX_RESULTS = 10;
+
+
+// = Éléments du DOM.
+const form = document.querySelector("#rp-form");
+const resultContainer = document.querySelector("#rp-result");
+
+
+// = Initialisation.
+function init()  {
+  if (!form) return;
+
+  form.addEventListener("submit", handleSubmit);
+}</code></pre>
+              <p class="code-panel__note">// = permet de repérer les grandes parties d'un fichier en un coup d'œil.</p>
+            </div>
+
+            <h3>Nomenclature des sous-blocs</h3>
+
+            <p class="body-copy">Le commentaire <code>// &gt;</code> permet de subdiviser une section en plusieurs étapes ou sous-parties, sans créer de nouvelle grande section.</p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>EXEMPLE — SOUS-BLOCS</span>
+                <span class="code-panel__language">JavaScript</span>
+              </div>
+              <pre><code>// = Gestion du formulaire.
+
+// &gt; Récupération des données.
+function getFormData() {
+  return new FormData(form);
+}
+
+// &gt; Validation.
+function validateForm(data) {
+  return data.has("pokemon");
+}
+
+// &gt; Soumission.
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const data = getFormData();
+
+  if (!validateForm(data)) return;
+
+  // Envoie les données après validation.
+  submitForm(data);
+}</code></pre>
+              <p class="code-panel__note">// &gt; sert à organiser les étapes d'une même section, sans multiplier les séparateurs principaux.</p>
+            </div>
+
+            <h3>Commentaires ponctuels</h3>
+
+            <p class="body-copy">
+              Les commentaires simples <code>//</code> sont réservés aux explications utiles à la compréhension du code. Ils peuvent préciser une contrainte technique, un comportement particulier ou
+              la raison d'un choix d'implémentation.
+            </p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>EXEMPLE — EXPLICATION</span>
+                <span class="code-panel__language">JavaScript</span>
+              </div>
+              <pre><code>function getPokemonSprite(pokemon, isShiny) {
+  // Utilise le sprite shiny uniquement s'il est disponible.
+  return isShiny &amp;&amp; pokemon.shiny
+    ? pokemon.shiny
+    : pokemon.sprite;
+}</code></pre>
+              <p class="code-panel__note">Le commentaire explique la condition métier plutôt que de répéter le fonctionnement de l'instruction.</p>
+            </div>
+
+            <h3>Règles d'utilisation</h3>
+
+            <ul>
+              <li>Utiliser <code>// =</code> pour les grandes sections fonctionnelles d'un fichier.</li>
+              <li>Utiliser <code>// &gt;</code> pour les sous-blocs ou les étapes d'une même section.</li>
+              <li>Utiliser les commentaires simples <code>//</code> pour apporter une explication ponctuelle.</li>
+              <li>Privilégier des intitulés courts, descriptifs et terminés par un point.</li>
+              <li>Conserver une ligne vide entre un commentaire de section et le code qui le suit.</li>
+              <li>Ne pas commenter systématiquement chaque fonction ou instruction lorsque son rôle est évident.</li>
+              <li>Expliquer pourquoi un comportement existe ou pourquoi une solution est utilisée, plutôt que paraphraser le code.</li>
+              <li>Mettre à jour ou supprimer les commentaires lorsqu'ils ne correspondent plus au code.</li>
+              <li>Conserver cette nomenclature dans les fichiers JavaScript, PHP et SCSS.</li>
+            </ul>
+          </section>
+
+          <section class="section-block" id="ressources">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">05 — RÉUTILISATION</p>
+                <h2>Ne pas recréer ce qui existe déjà.</h2>
+              </div>
+              <span class="section-index">05</span>
+            </div>
+            <p class="body-copy">Répertorie ici les ressources réutilisables avec leur rôle, leur emplacement, leurs dépendances et les conditions d’utilisation.</p>
+            <div class="resource-card">
+              <div class="resource-card__top"><span class="resource-card__type">FONCTION JAVASCRIPT</span><span class="resource-card__status">À documenter</span></div>
+              <h3>Nom de la fonction</h3>
+              <p>Décris en une ou deux phrases ce qu’elle fait et dans quel cas l’utiliser.</p>
+              <div class="resource-card__details">
+                <div><span>EMPLACEMENT</span><code>assets/js/nom-du-fichier.js</code></div>
+                <div>
+                  <span>ENTRÉES / SORTIES</span>
+                  <p>Paramètres attendus et résultat renvoyé.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-block" id="developpement">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">06 — MÉTHODE</p>
+                <h2>Développer un nouvel outil</h2>
+              </div>
+              <span class="section-index">06</span>
+            </div>
+            <ol class="steps-list">
+              <li>
+                <span class="steps-list__number">01</span>
+                <div>
+                  <h3>Définir le besoin</h3>
+                  <p>Noter le problème à résoudre, les utilisateurs concernés et le résultat attendu.</p>
+                </div>
+              </li>
+              <li>
+                <span class="steps-list__number">02</span>
+                <div>
+                  <h3>Choisir l’environnement</h3>
+                  <p>Déterminer ce qui relève du local, du forum, des pages statiques ou du serveur.</p>
+                </div>
+              </li>
+              <li>
+                <span class="steps-list__number">03</span>
+                <div>
+                  <h3>Réutiliser l’existant</h3>
+                  <p>Vérifier les fonctions, styles et conventions déjà documentés.</p>
+                </div>
+              </li>
+              <li>
+                <span class="steps-list__number">04</span>
+                <div>
+                  <h3>Tester avant de publier</h3>
+                  <p>Contrôler le fonctionnement, les erreurs et les effets sur les outils existants.</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="section-block" id="prompts">
+            <div class="section-heading">
+              <div>
+                <p class="section-kicker">09 — RÉFÉRENCE</p>
+                <h2>Travailler avec ChatGPT</h2>
+              </div>
+              <span class="section-index">09</span>
+            </div>
+
+            <p class="body-copy">
+              Cette section regroupe les prompts et les informations de référence à transmettre à ChatGPT pour travailler sur Themis Trials. L'objectif est de limiter les répétitions, de conserver les
+              conventions du projet et d'obtenir des réponses adaptées à son architecture réelle.
+            </p>
+
+            <h3>Comment utiliser cette bibliothèque</h3>
+
+            <ul>
+              <li><strong>Nouvelle conversation :</strong> transmettre le prompt de contexte général, puis préciser la tâche à effectuer.</li>
+              <li><strong>Modification de code :</strong> ajouter le prompt adapté à la tâche et fournir le code actuel ainsi que les fichiers concernés.</li>
+              <li><strong>Débogage :</strong> transmettre le message d'erreur exact, le comportement attendu, le comportement observé et le contexte technique.</li>
+              <li><strong>Reprise d'un travail :</strong> fournir un résumé de l'avancement, les décisions déjà prises et les points restant à traiter.</li>
+            </ul>
+
+            <p class="body-copy">Les prompts sont des modèles adaptables, pas des consignes à appliquer aveuglément. Ils doivent être complétés avec le contexte spécifique de chaque tâche.</p>
+
+            <h3>01 — Contexte général du projet</h3>
+
+            <p class="body-copy">À utiliser au début d'une nouvelle conversation consacrée au projet. Ce prompt rappelle les objectifs, les technologies et les règles de travail.</p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>PROMPT DE RÉFÉRENCE</span>
+                <span class="code-panel__language">À COPIER</span>
+              </div>
+              <pre><code>Je travaille sur Themis Trials, un projet personnel d'outils
+et de dashboard administratif pour un forum RPG Pokémon
+hébergé sur Forumactif.
+
+ENVIRONNEMENTS
+- Développement local sur Windows avec VS Code.
+- Gestion du code avec Git et GitHub.
+- Compilation du SCSS avec Prepros.
+- Hébergement PHP et données sur Infomaniak.
+- Intégration de certains scripts directement dans Forumactif.
+
+TECHNOLOGIES
+HTML, SCSS/CSS, JavaScript, PHP et JSON.
+
+ORGANISATION
+- tools/ : un dossier par outil.
+- shared/ : ressources réellement communes.
+- server/ : API, configuration, fonctions PHP et données serveur.
+- environments/ : adaptations propres au local et à Forumactif.
+- docs/ : documentation technique et conventions.
+
+CONVENTIONS
+- Classes CSS organisées selon BEM.
+- Double underscore __ pour les éléments.
+- Double tiret -- pour les variantes.
+- Noms de fichiers en minuscules avec des tirets.
+- JavaScript lisible, modulaire et sans duplication inutile.
+- Préserver les conventions et le style du code existant.
+
+FAÇON DE TRAVAILLER
+- Ne pas inventer de fichiers, de fonctions, de sélecteurs ou
+  de comportements qui ne sont pas établis.
+- Examiner le code fourni avant de proposer une modification.
+- Privilégier les changements ciblés et compatibles avec l'existant.
+- Expliquer précisément où placer le code et quoi remplacer.
+- Signaler les dépendances et les conséquences éventuelles.
+- Si une information indispensable manque, me poser une
+  question plutôt que de faire une supposition.
+- Respecter les contraintes propres à chaque environnement.
+
+Je vais maintenant te donner une tâche précise. Commence par
+analyser le contexte et le code concernés avant de proposer
+une solution.</code></pre>
+              <p class="code-panel__note">À actualiser lorsque l'architecture, les technologies ou les conventions du projet évoluent.</p>
+            </div>
+
+            <h3>02 — Modifier du code existant</h3>
+
+            <p class="body-copy">À utiliser lorsqu'une fonction ou un fichier doit évoluer sans réécriture inutile du reste du projet.</p>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>PROMPT DE MODIFICATION</span>
+                <span class="code-panel__language">À COPIER</span>
+              </div>
+              <pre><code>Je souhaite modifier le code suivant.
+
+OBJECTIF
+[Décrire précisément le résultat attendu.]
+
+CODE ACTUEL
+[Coller le code concerné.]
+
+CONTRAINTES
+- Conserver le comportement existant en dehors de la modification.
+- Respecter les conventions et la structure actuelles.
+- Ne pas réécrire les parties qui n'ont pas besoin de changer.
+- Ne pas inventer de CSS, de fonctions ou de dépendances.
+- Vérifier les interactions avec le code existant.
+
+Présente la modification exacte, indique où l'appliquer et
+explique brièvement pourquoi elle est nécessaire.
+Si le code fourni ne suffit pas, demande les éléments manquants.</code></pre>
+            </div>
+
+            <h3>03 — Déboguer une erreur</h3>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>PROMPT DE DÉBOGAGE</span>
+                <span class="code-panel__language">À COPIER</span>
+              </div>
+              <pre><code>Je rencontre un problème dans Themis Trials.
+
+COMPORTEMENT ATTENDU
+[Ce qui devrait se produire.]
+
+COMPORTEMENT OBSERVÉ
+[Ce qui se produit réellement.]
+
+ERREUR
+[Message exact de la console, du serveur ou du navigateur.]
+
+ENVIRONNEMENT
+[Local, Forumactif ou Infomaniak.]
+
+CODE CONCERNÉ
+[Coller le code et, si nécessaire, les fonctions appelées.]
+
+Analyse la cause probable à partir des éléments fournis.
+Distingue les causes confirmées des hypothèses.
+Propose d'abord la correction minimale et explique comment
+vérifier qu'elle fonctionne sans provoquer de régression.</code></pre>
+            </div>
+
+            <h3>04 — Refactoriser et optimiser</h3>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>PROMPT DE REFACTORISATION</span>
+                <span class="code-panel__language">À COPIER</span>
+              </div>
+              <pre><code>Je souhaite refactoriser le code fourni pour le rendre plus
+lisible, maintenable et cohérent avec le reste du projet.
+
+Priorités :
+- Réduire les répétitions inutiles.
+- Factoriser uniquement ce qui gagne réellement à l'être.
+- Conserver les fonctionnalités et le comportement existants.
+- Respecter les noms, conventions et commentaires du projet.
+- Éviter les abstractions et dépendances superflues.
+- Ne pas supprimer une logique sans vérifier son utilité.
+
+Ne modifie pas le fonctionnement sans me le signaler.
+Fournis le code complet révisé si je le demande, et précise
+les changements importants ainsi que les éventuelles régressions
+à tester.</code></pre>
+            </div>
+
+            <h3>05 — Créer un nouvel outil</h3>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>PROMPT DE CONCEPTION</span>
+                <span class="code-panel__language">À COPIER</span>
+              </div>
+              <pre><code>Je souhaite créer un nouvel outil pour Themis Trials.
+
+OBJECTIF
+[Décrire la fonctionnalité.]
+
+UTILISATEURS ET USAGE
+[Préciser qui l'utilise et comment.]
+
+ENVIRONNEMENTS CIBLES
+[Local, Forumactif, Infomaniak ou plusieurs.]
+
+DONNÉES
+[Préciser les données utilisées, leur origine et leur stockage.]
+
+Avant de coder :
+1. Identifie les besoins et les contraintes.
+2. Vérifie les ressources déjà disponibles dans le projet.
+3. Propose l'organisation des fichiers selon l'architecture.
+4. Identifie les éléments communs et les adaptations nécessaires.
+5. Signale les questions techniques à résoudre.
+
+Ne génère pas immédiatement une architecture complexe.
+Privilégie une solution simple, modulaire et compatible avec
+les outils déjà existants.</code></pre>
+            </div>
+
+            <h3>06 — Documenter une fonctionnalité</h3>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>PROMPT DE DOCUMENTATION</span>
+                <span class="code-panel__language">À COPIER</span>
+              </div>
+              <pre><code>Documente la fonctionnalité ou le code que je vais fournir.
+
+La documentation doit préciser :
+- Son rôle et le problème qu'il résout.
+- Son emplacement dans l'arborescence.
+- Ses dépendances.
+- Ses paramètres, entrées et sorties.
+- Son fonctionnement général.
+- Les fichiers ou fonctionnalités qui l'utilisent.
+- Les contraintes et points de vigilance.
+- La procédure de test et de mise à jour, si pertinente.
+
+Appuie-toi uniquement sur le code et les informations fournis.
+Distingue les faits confirmés des éléments à vérifier.
+Rédige une documentation claire, structurée et adaptée à
+une personne qui reprend le projet après plusieurs semaines.</code></pre>
+            </div>
+
+            <h3>07 — Reprendre un travail précédent</h3>
+
+            <div class="code-panel">
+              <div class="code-panel__header">
+                <span>PROMPT DE CONTINUITÉ</span>
+                <span class="code-panel__language">À COPIER</span>
+              </div>
+              <pre><code>Je souhaite reprendre un travail déjà commencé sur Themis Trials.
+
+SUJET
+[Nom de l'outil ou de la fonctionnalité.]
+
+OBJECTIF INITIAL
+[Résultat recherché.]
+
+ÉTAT ACTUEL
+[Ce qui fonctionne déjà.]
+
+DÉCISIONS PRISES
+[Architecture, conventions, solutions retenues.]
+
+PROBLÈMES RESTANTS
+[Erreurs, limitations ou tâches non terminées.]
+
+FICHIERS CONCERNÉS
+[Chemins et code actuel.]
+
+Commence par reformuler l'état du projet et identifier les
+informations manquantes. Ne considère pas une ancienne version
+du code comme actuelle sans vérification.
+Poursuis à partir de l'existant sans recommencer inutilement.</code></pre>
+            </div>
+
+            <h3>Informations à joindre selon la tâche</h3>
+
+            <p class="body-copy">Le prompt général ne remplace pas les informations propres à une intervention. Pour obtenir une réponse précise, joindre les éléments pertinents.</p>
+
+            <ul>
+              <li><strong>Code :</strong> fichier complet ou extrait suffisamment large pour comprendre les fonctions appelées.</li>
+              <li><strong>CSS / SCSS :</strong> sélecteurs concernés et styles existants, en particulier lorsqu'il faut préserver le rendu actuel.</li>
+              <li><strong>JavaScript :</strong> événements, fonctions appelées, éléments HTML concernés et messages de console.</li>
+              <li><strong>PHP / API :</strong> point d'entrée, fonctions appelées, format des données et erreur serveur éventuelle.</li>
+              <li><strong>Forumactif :</strong> emplacement d'installation du script, contraintes de la plateforme et résultat attendu.</li>
+              <li><strong>Reprise de conversation :</strong> résumé des décisions, état du code et prochaine étape.</li>
+            </ul>
+
+            <h3>Règle de référence</h3>
+
+            <p class="body-copy">
+              Les prompts facilitent le travail, mais le code actuel et la documentation du projet restent les références. En cas de contradiction, vérifier l'architecture réelle et les dernières
+              décisions avant de modifier le code.
+            </p>
+          </section>
+
+          <footer class="page-footer">
+            <span>THEMIS TRIALS · OUTILS</span>
+            <span>Documentation personnelle — évolutive</span>
+          </footer>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
