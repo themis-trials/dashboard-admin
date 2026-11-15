@@ -1,0 +1,5 @@
+@use "../../shared/scss/variables" as *;
+@use "../../shared/scss/root" as *;
+@use "../../shared/scss/mixins" as *;
+
+@include hero-image("top-sites");

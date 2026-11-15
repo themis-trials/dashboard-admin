@@ -1,0 +1,428 @@
+@use "../../shared/scss/variables" as *;
+@use "../../shared/scss/root" as *;
+@use "../../shared/scss/functions" as *;
+@use "../../shared/scss/mixins" as *;
+@use "_talents_sidebar" as *;
+@use "_talents_card" as *;
+
+@include hero-image("talents");
+
+// ==========================================================
+// THEMIS TRIALS ✦ TALENTS - MAIN CONTENT
+// ==========================================================
+
+.talents {
+  &__joueurs {
+    display: grid;
+    gap: $spacing-3;
+  }
+
+  &__main-filter {
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-areas:
+      "joueurs talents"
+      "synchronisation synchronisation";
+
+    .talents__synchronisation {
+      grid-area: synchronisation;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      button {
+        width: stretch;
+      }
+
+      #synchroniser {
+        &-message,
+        &-compteur {
+          padding: 6px $spacing-3;
+          width: 100%;
+          border-radius: $border-radius-md;
+          font-size: $font-size-sm;
+          font-weight: $font-weight-semibold;
+        }
+
+        &-compteur {
+          background: $color-bg-content;
+          box-shadow: border-inset(0.1);
+          border-left: 12px $color-border solid;
+        }
+
+        &-message {
+          background: $color-btn-success-bg;
+          box-shadow: inset 0 0 0 1px $color-btn-success-border;
+          border-left: 12px $color-btn-success-border solid;
+          color: $color-btn-success-text;
+        }
+      }
+
+      &:has(.talents__synchronisation-message:not(:empty)) {
+        #synchroniser-compteur {
+          display: none;
+        }
+      }
+    }
+    #dropdown-joueurs {
+      grid-area: joueurs;
+    }
+    #dropdown-talents {
+      grid-area: talents;
+    }
+  }
+
+  &__joueur {
+    display: grid;
+    grid-template-areas:
+      "avatar identity toggle"
+      "avatar preview toggle"
+      "details details details";
+    grid-template-columns: 64px minmax(0, 1fr) 44px;
+    align-items: center;
+    min-width: 0;
+    background: $color-bg-content;
+    box-shadow: border-inset(0.1);
+    border-radius: $border-radius-md;
+    padding: 1rem;
+    border-left-width: 10px;
+    border-left-style: solid;
+
+    &[hidden] {
+      display: none !important;
+    }
+
+    &-avatar {
+      grid-area: avatar;
+      align-self: stretch;
+      width: 64px;
+      border-radius: $border-radius-md;
+      object-fit: cover;
+    }
+
+    &-identity {
+      grid-area: identity;
+      display: grid;
+      grid-template-areas:
+        "pseudo rank"
+        "count count";
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+      align-items: center;
+      grid-column-gap: 12px;
+      grid-row-gap: 6px;
+      justify-content: start;
+      margin-left: 12px;
+    }
+
+    &-name {
+      grid-area: pseudo;
+      margin: 0;
+      line-height: $line-height-default;
+      font-size: 21px;
+      overflow-wrap: anywhere;
+    }
+
+    &-rank {
+      grid-area: rank;
+
+      grid-area: rank;
+      background: $color-bg-inset;
+      box-shadow: border-inset(0.1);
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 999px;
+      color: $color-text-muted;
+      padding: 2px 8px;
+
+      font-size: $font-size-sm;
+      font-size: 10px;
+    }
+
+    &-count {
+      grid-area: count;
+      color: $color-text-muted;
+      font-size: $font-size-sm;
+    }
+
+    // = aperçu des talents
+    &-preview {
+      grid-area: preview;
+      display: flex;
+      align-items: center;
+      margin: 6px 0px 0px 12px;
+      margin-left: 12px;
+      flex-wrap: wrap;
+      gap: $spacing-2;
+    }
+
+    &-badge {
+      max-width: 100%;
+      background: $color-bg-inset;
+      box-shadow: border-inset(0.1);
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: $font-size-xs;
+      overflow-wrap: anywhere;
+    }
+
+    // = toggle pour l'ouverture de la CARD
+    &-toggle {
+      grid-area: toggle;
+      display: grid;
+      justify-self: center;
+      width: 44px;
+      height: 44px;
+      background: $color-toggle-bg;
+      cursor: pointer;
+      border-radius: $border-radius-full;
+      border: 1px solid $color-border;
+      padding: 0;
+      transition: background-color $transition-fast;
+      place-items: center;
+
+      &:hover {
+        background: $color-toggle-hover;
+      }
+
+      i {
+        display: inline-block;
+        font-size: $font-size-lg;
+        transition: transform $transition-base;
+      }
+    }
+
+    &.is-open .talents__joueur-toggle {
+      background: $color-toggle-active;
+      & i {
+        transform: rotate(180deg);
+      }
+    }
+
+    // = Bloc dépliable
+
+    &-details {
+      grid-area: details;
+
+      display: grid;
+      grid-template-rows: 0fr;
+
+      min-width: 0;
+
+      visibility: hidden;
+      transition:
+        grid-template-rows 0.35s ease,
+        visibility 0s linear 0.35s;
+    }
+
+    // = Liste des talents
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 316px), 1fr));
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-top: 24px;
+
+      .talents__joueur {
+        &-talent {
+          background: $color-bg-inset;
+          box-shadow: border-inset(0.1);
+          border-radius: $border-radius-md;
+          padding: $spacing-4 $spacing-6;
+          gap: $spacing-3;
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+
+          button {
+            width: 100%;
+          }
+
+          // = icon + nom + description du talent
+          &-info {
+            grid-area: info;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: repeat(2, auto);
+            grid-column-gap: $spacing-3;
+            grid-row-gap: 0px;
+            align-items: center;
+            grid-template-areas:
+              "icon name date"
+              "icon description description";
+            &-icon {
+              grid-area: icon;
+              background: rgba(9, 10, 11, 0.1);
+              box-shadow: border-inset(0.1);
+              border-radius: 4px;
+              padding: $spacing-2;
+              width: 32px;
+            }
+
+            &-name {
+              grid-area: name;
+              font-size: 20px;
+            }
+
+            &-prochaine-date {
+              grid-area: date;
+              font-size: $font-size-xs;
+              font-weight: $font-weight-bold;
+            }
+
+            &-description {
+              grid-area: description;
+              color: $color-text-secondary;
+              font-size: $font-size-xs;
+            }
+          }
+
+          &-historique {
+            position: relative;
+            margin-top: 25px;
+            padding: $spacing-2 $spacing-3;
+            background: $color-bg-element;
+            box-shadow: border-inset(0.1);
+            border-radius: 4px;
+            align-items: center;
+            display: flex;
+
+            &::before {
+              content: "Historique";
+              position: absolute;
+              bottom: 100%;
+              left: 0;
+              padding-bottom: 0px;
+              font-size: $font-size-sm;
+              text-transform: uppercase;
+              letter-spacing: $letter-spacing-small;
+              font-weight: $font-weight-semibold;
+            }
+
+            &-derniere-date {
+              font-weight: $font-weight-semibold;
+              font-size: $font-size-xs;
+            }
+
+            &-dernier-item {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              margin-left: 8px;
+              font-size: $font-size-xs;
+              &-icon {
+                grid-area: icon;
+                background: rgba(9, 10, 11, 0.1);
+                box-shadow: border-inset(0.1);
+                border-radius: 4px;
+                padding: $spacing-1;
+                width: 22px;
+              }
+            }
+          }
+
+          &-date {
+            display: flex;
+            gap: 8px;
+
+            input {
+              background: $color-bg-element;
+              box-shadow: border-inset(0.1);
+              border: none;
+              padding: $spacing-2 $spacing-3;
+              border-radius: 8px;
+              font-family: $font-family-inter;
+              font-size: $font-size-xs;
+              font-weight: $font-weight-semibold;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__objet {
+    &-result {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      text-transform: uppercase;
+      flex-direction: row-reverse;
+      font-weight: 700;
+      gap: 8px;
+    }
+
+    &-image {
+      background: rgba(9, 10, 11, 0.1);
+      box-shadow: border-inset(0.1);
+      border-radius: 4px;
+      padding: $spacing-1;
+    }
+  }
+}
+
+// ==========================================================
+// DÉTAILS DÉPLIABLES
+// ==========================================================
+.talents__joueur {
+  &.is-open .talents__joueur-details {
+    grid-template-rows: 1fr;
+    visibility: visible;
+
+    transition:
+      grid-template-rows 0.35s ease,
+      visibility 0s;
+  }
+  &-details-inner {
+    min-height: 0;
+    overflow: hidden;
+  }
+}
+
+// ==========================================================
+// RESPONSIVE
+// ==========================================================
+
+@media (max-width: 600px) {
+  .talents__joueur {
+    grid-template-columns: 48px minmax(0, 1fr) 44px;
+    padding: 0.75rem;
+    gap: 0.5rem 0.75rem;
+  }
+
+  .talents__joueur-avatar {
+    width: 48px;
+  }
+}
+
+// ==========================================================
+// ACCESSIBILITÉ
+// ==========================================================
+
+@media (prefers-reduced-motion: reduce) {
+  .talents__joueur-toggle i {
+    transition: none;
+  }
+}
+
+// .talents {
+//   &__joueur-talent {
+//     &[data-statut="distribue"] {
+//       // Récompense distribuée.
+//     }
+
+//     &[data-statut="attente"] {
+//       // Récompense en attente.
+//     }
+
+//     &[data-statut="sans-recompense"] {
+//       // Aucun système de récompense.
+//     }
+//   }
+// }

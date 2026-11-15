@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TALENTS ✦ DASHBOARD</title>
+    <link rel="icon" type="image/png" href="https://www.serebii.net/itemdex/sprites/journal.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="../../shared/css/main.css" />
+    <link rel="stylesheet" href="talents.css" />
+    <link rel="stylesheet" href="../../shared/components/buttons/buttons.css" />
+    <link rel="stylesheet" href="../../shared/components/dropdown/dropdown.css" />
+    <link rel="stylesheet" href="../../shared/components/date-filter/date-filter.css" />
+    <script src="../../shared/js/navbar.js"></script>
+  </head>
+  <body data-tool="talents">
+    <!-- > Header. -->
+    <header class="hero">
+      <div class="hero__content">
+        <div class="hero__subtitle"></div>
+        <h1 class="hero__title">Gestion des talents</h1>
+        <p class="hero__description">Description de l'outil.</p>
+      </div>
+      <div class="hero__img"></div>
+    </header>
+    <sidebar class="container">
+      <section class="talents__list">
+        <h2 class="talents__title">Talents concernés</h2>
+        <p class="talents__description">Liste des talents concernés par le don d'objet par quinzaine.</p>
+        <ul class="talents__legend">
+          <li><b>Automatique :</b> donne une récompense fixe.</li>
+          <li><b>Aléatoire :</b> choisi un objet aléatoire parmi une liste prédéfinie.</li>
+          <li><b>Demande :</b> nécessite une demande de la part du joueur.</li>
+        </ul>
+        <ul class="talents__items" id="talents-list"></ul>
+      </section>
+    </sidebar>
+    <main class="talents__main">
+      <section class="talents__main-filter container">
+        <div class="talents__synchronisation">
+          <span id="synchroniser-sheets"></span>
+
+          <span id="synchroniser-compteur">Aucune modification en attente</span>
+
+          <div class="talents__synchronisation-message" id="synchroniser-message" aria-live="polite" data-status="success">Synchronisation terminée !</div>
+
+          <iframe id="synchroniser-frame" name="synchroniser-frame" hidden></iframe>
+        </div>
+        <!-- <section class="talents__filters" aria-label="Filtres">
+        <label class="talents__search">
+          <span class="talents__label">Rechercher</span>
+          <input class="talents__input" id="talents-search" type="search" placeholder="Joueur, personnage ou talent..." />
+        </label>
+
+        <p class="talents__count" id="talents-count" aria-live="polite">Chargement des joueurs…</p>
+      </section>
+
+      <p class="talents__status" id="talents-status" role="status">Chargement des données…</p>
+
+      <section class="talents__list" id="talents-list" aria-label="Joueurs et talents"></section> -->
+
+        <div id="dropdown-joueurs"></div>
+        <div id="dropdown-talents"></div>
+      </section>
+      <!-- <div id="filtre-dates"></div> -->
+      <section class="talents__main-talents container">
+        <h2 class="talents__title">Répartition des talents</h2>
+        <ul class="talents__joueurs" id="talents-joueurs"></ul>
+      </section>
+    </main>
+    <script type="module" src="talentsv2.js"></script>
+    <script></script>
+  </body>
+</html>

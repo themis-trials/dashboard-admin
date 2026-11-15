@@ -1,0 +1,527 @@
+@charset "UTF-8";
+:root {
+  --bg-orange-light: #eeb8aa;
+  --bg-bleu-light: #b9d4df;
+  --bg-bleu: #95bed0;
+  --bg-bleu-second: #72a9c0;
+  --bg-bleu-terti: #4f93b0;
+  --bg-orange-light: #eeb8aa;
+  --bg-orange: #e59480;
+  --bg-orange-second: #dc7156;
+  --bg-orange-terti: #d44d2b;
+  --txt-orange: #d44d2b;
+  --txt-orange-def: #dc7156;
+}
+
+[data-group=grp-3].bg-grp {
+  background-color: #d47b7b;
+}
+[data-group=grp-3].border-grp {
+  border-color: #d47b7b;
+}
+[data-group=grp-3].txt-grp {
+  color: #d47b7b;
+}
+[data-group=grp-3] .bg-grp {
+  background-color: #d47b7b;
+}
+[data-group=grp-3] .border-grp {
+  border-color: #d47b7b;
+}
+[data-group=grp-3] .txt-grp {
+  color: #d47b7b;
+}
+
+[data-group=grp-4].bg-grp {
+  background-color: #758cd8;
+}
+[data-group=grp-4].border-grp {
+  border-color: #758cd8;
+}
+[data-group=grp-4].txt-grp {
+  color: #758cd8;
+}
+[data-group=grp-4] .bg-grp {
+  background-color: #758cd8;
+}
+[data-group=grp-4] .border-grp {
+  border-color: #758cd8;
+}
+[data-group=grp-4] .txt-grp {
+  color: #758cd8;
+}
+
+[data-group=grp-5].bg-grp {
+  background-color: #80ae77;
+}
+[data-group=grp-5].border-grp {
+  border-color: #80ae77;
+}
+[data-group=grp-5].txt-grp {
+  color: #80ae77;
+}
+[data-group=grp-5] .bg-grp {
+  background-color: #80ae77;
+}
+[data-group=grp-5] .border-grp {
+  border-color: #80ae77;
+}
+[data-group=grp-5] .txt-grp {
+  color: #80ae77;
+}
+
+.talents__legend {
+  margin: 0px 0px 10px 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #575757;
+  font-size: 0.75rem;
+}
+.talents__legend ::marker {
+  color: #dc7156;
+}
+.talents__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.talents__section {
+  list-style: none;
+}
+.talents__section h2 {
+  margin: 0px 0px 10px 10px;
+  letter-spacing: 0;
+  color: #dc7156;
+  font-size: 21px;
+}
+.talents__item {
+  display: grid;
+  grid-template-areas: "icon name type" "icon effet effet";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  background: #f5f5f5;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  list-style: none;
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0.25rem;
+}
+.talents__item .talents__icon {
+  grid-area: icon;
+  width: 26px;
+  height: 26px;
+  background: #ededed;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+.talents__item .talents__name {
+  grid-area: name;
+  align-self: center;
+  line-height: 1;
+  font-size: 0.875rem;
+}
+.talents__item .talents__type {
+  grid-area: type;
+  align-self: center;
+}
+.talents__item .talents__type::before {
+  grid-area: type;
+  display: flex;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  padding: 2px 0.5rem;
+  font-size: 10px;
+  content: "";
+}
+.talents__item .talents__type[data-type=automatique]::before {
+  background: #a0c4ff;
+  content: "automatique";
+}
+.talents__item .talents__type[data-type=aléatoire]::before {
+  background: #ffc6ff;
+  content: "aléatoire";
+}
+.talents__item .talents__type[data-type=demande]::before {
+  background: #bdb2ff;
+  content: "demande";
+}
+.talents__item .talents__effet {
+  grid-area: effet;
+  margin: 0px;
+  font-weight: 400;
+  color: #575757;
+  font-size: 0.75rem;
+}
+
+/* ==========================================================
+   RESPONSIVE — TALENTS
+   ========================================================== */
+@media (max-width: 1300px) {
+  .talents__item {
+    grid-template-areas: "icon name" "icon type" "icon effet";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: start;
+  }
+  .talents__item .talents__name {
+    grid-area: name;
+  }
+  .talents__item .talents__type {
+    grid-area: type;
+    justify-self: start;
+  }
+  .talents__item .talents__type::before {
+    display: inline-flex;
+  }
+  .talents__item .talents__effet {
+    grid-area: effet;
+  }
+}
+@media (max-width: 1100px) {
+  .talents__item {
+    grid-template-areas: "icon" "name" "type" "effet";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: start;
+    row-gap: 0.5rem;
+  }
+  .talents__item .talents__icon {
+    grid-area: icon;
+    width: 26px;
+    height: 26px;
+  }
+  .talents__item .talents__name {
+    grid-area: name;
+  }
+  .talents__item .talents__type {
+    grid-area: type;
+  }
+  .talents__item .talents__effet {
+    grid-area: effet;
+  }
+}
+.talents__joueur {
+  background: red;
+}
+
+body[data-tool=talents] {
+  --hero-img: url("/shared/img/03.jpg");
+}
+
+.talents__joueurs {
+  display: grid;
+  gap: 0.75rem;
+}
+.talents__main-filter {
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-areas: "joueurs talents" "synchronisation synchronisation";
+}
+.talents__main-filter .talents__synchronisation {
+  grid-area: synchronisation;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.talents__main-filter .talents__synchronisation button {
+  width: stretch;
+}
+.talents__main-filter .talents__synchronisation #synchroniser-message, .talents__main-filter .talents__synchronisation #synchroniser-compteur {
+  padding: 6px 0.75rem;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.talents__main-filter .talents__synchronisation #synchroniser-compteur {
+  background: #f5f5f5;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-left: 12px rgba(9, 10, 11, 0.1) solid;
+}
+.talents__main-filter .talents__synchronisation #synchroniser-message {
+  background: #f0fdf4;
+  box-shadow: inset 0 0 0 1px #bbf7d0;
+  border-left: 12px #bbf7d0 solid;
+  color: #166534;
+}
+.talents__main-filter .talents__synchronisation:has(.talents__synchronisation-message:not(:empty)) #synchroniser-compteur {
+  display: none;
+}
+.talents__main-filter #dropdown-joueurs {
+  grid-area: joueurs;
+}
+.talents__main-filter #dropdown-talents {
+  grid-area: talents;
+}
+.talents__joueur {
+  display: grid;
+  grid-template-areas: "avatar identity toggle" "avatar preview toggle" "details details details";
+  grid-template-columns: 64px minmax(0, 1fr) 44px;
+  align-items: center;
+  min-width: 0;
+  background: #f5f5f5;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  border-left-width: 10px;
+  border-left-style: solid;
+}
+.talents__joueur[hidden] {
+  display: none !important;
+}
+.talents__joueur-avatar {
+  grid-area: avatar;
+  align-self: stretch;
+  width: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.talents__joueur-identity {
+  grid-area: identity;
+  display: grid;
+  grid-template-areas: "pseudo rank" "count count";
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  align-items: center;
+  grid-column-gap: 12px;
+  grid-row-gap: 6px;
+  justify-content: start;
+  margin-left: 12px;
+}
+.talents__joueur-name {
+  grid-area: pseudo;
+  margin: 0;
+  line-height: 1;
+  font-size: 21px;
+  overflow-wrap: anywhere;
+}
+.talents__joueur-rank {
+  grid-area: rank;
+  grid-area: rank;
+  background: #ededed;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 999px;
+  color: #767676;
+  padding: 2px 8px;
+  font-size: 0.875rem;
+  font-size: 10px;
+}
+.talents__joueur-count {
+  grid-area: count;
+  color: #767676;
+  font-size: 0.875rem;
+}
+.talents__joueur-preview {
+  grid-area: preview;
+  display: flex;
+  align-items: center;
+  margin: 6px 0px 0px 12px;
+  margin-left: 12px;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.talents__joueur-badge {
+  max-width: 100%;
+  background: #ededed;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  overflow-wrap: anywhere;
+}
+.talents__joueur-toggle {
+  grid-area: toggle;
+  display: grid;
+  justify-self: center;
+  width: 44px;
+  height: 44px;
+  background: #ededed;
+  cursor: pointer;
+  border-radius: 9999px;
+  border: 1px solid rgba(9, 10, 11, 0.1);
+  padding: 0;
+  transition: background-color 150ms ease;
+  place-items: center;
+}
+.talents__joueur-toggle:hover {
+  background: #8fbfd1;
+}
+.talents__joueur-toggle i {
+  display: inline-block;
+  font-size: 1.25rem;
+  transition: transform 400ms ease;
+}
+.talents__joueur.is-open .talents__joueur-toggle {
+  background: #e99580;
+}
+.talents__joueur.is-open .talents__joueur-toggle i {
+  transform: rotate(180deg);
+}
+.talents__joueur-details {
+  grid-area: details;
+  display: grid;
+  grid-template-rows: 0fr;
+  min-width: 0;
+  visibility: hidden;
+  transition: grid-template-rows 0.35s ease, visibility 0s linear 0.35s;
+}
+.talents__joueur-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 316px), 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 24px;
+}
+.talents__joueur-list .talents__joueur-talent {
+  background: #ededed;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.talents__joueur-list .talents__joueur-talent button {
+  width: 100%;
+}
+.talents__joueur-list .talents__joueur-talent-info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 0.75rem;
+  grid-row-gap: 0px;
+  align-items: center;
+  grid-template-areas: "icon name date" "icon description description";
+}
+.talents__joueur-list .talents__joueur-talent-info-icon {
+  grid-area: icon;
+  background: rgba(9, 10, 11, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 32px;
+}
+.talents__joueur-list .talents__joueur-talent-info-name {
+  grid-area: name;
+  font-size: 20px;
+}
+.talents__joueur-list .talents__joueur-talent-info-prochaine-date {
+  grid-area: date;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.talents__joueur-list .talents__joueur-talent-info-description {
+  grid-area: description;
+  color: #292929;
+  font-size: 0.75rem;
+}
+.talents__joueur-list .talents__joueur-talent-historique {
+  position: relative;
+  margin-top: 25px;
+  padding: 0.5rem 0.75rem;
+  background: #d6d6d6;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+}
+.talents__joueur-list .talents__joueur-talent-historique::before {
+  content: "Historique";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  padding-bottom: 0px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+}
+.talents__joueur-list .talents__joueur-talent-historique-derniere-date {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.talents__joueur-list .talents__joueur-talent-historique-dernier-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+  font-size: 0.75rem;
+}
+.talents__joueur-list .talents__joueur-talent-historique-dernier-item-icon {
+  grid-area: icon;
+  background: rgba(9, 10, 11, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.25rem;
+  width: 22px;
+}
+.talents__joueur-list .talents__joueur-talent-date {
+  display: flex;
+  gap: 8px;
+}
+.talents__joueur-list .talents__joueur-talent-date input {
+  background: #d6d6d6;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.talents__objet-result {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  flex-direction: row-reverse;
+  font-weight: 700;
+  gap: 8px;
+}
+.talents__objet-image {
+  background: rgba(9, 10, 11, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.talents__joueur.is-open .talents__joueur-details {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  transition: grid-template-rows 0.35s ease, visibility 0s;
+}
+.talents__joueur-details-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .talents__joueur {
+    grid-template-columns: 48px minmax(0, 1fr) 44px;
+    padding: 0.75rem;
+    gap: 0.5rem 0.75rem;
+  }
+  .talents__joueur-avatar {
+    width: 48px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .talents__joueur-toggle i {
+    transition: none;
+  }
+}

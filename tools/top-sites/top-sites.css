@@ -1,0 +1,74 @@
+:root {
+  --bg-orange-light: #eeb8aa;
+  --bg-bleu-light: #b9d4df;
+  --bg-bleu: #95bed0;
+  --bg-bleu-second: #72a9c0;
+  --bg-bleu-terti: #4f93b0;
+  --bg-orange-light: #eeb8aa;
+  --bg-orange: #e59480;
+  --bg-orange-second: #dc7156;
+  --bg-orange-terti: #d44d2b;
+  --txt-orange: #d44d2b;
+  --txt-orange-def: #dc7156;
+}
+
+[data-group=grp-3].bg-grp {
+  background-color: #d47b7b;
+}
+[data-group=grp-3].border-grp {
+  border-color: #d47b7b;
+}
+[data-group=grp-3].txt-grp {
+  color: #d47b7b;
+}
+[data-group=grp-3] .bg-grp {
+  background-color: #d47b7b;
+}
+[data-group=grp-3] .border-grp {
+  border-color: #d47b7b;
+}
+[data-group=grp-3] .txt-grp {
+  color: #d47b7b;
+}
+
+[data-group=grp-4].bg-grp {
+  background-color: #758cd8;
+}
+[data-group=grp-4].border-grp {
+  border-color: #758cd8;
+}
+[data-group=grp-4].txt-grp {
+  color: #758cd8;
+}
+[data-group=grp-4] .bg-grp {
+  background-color: #758cd8;
+}
+[data-group=grp-4] .border-grp {
+  border-color: #758cd8;
+}
+[data-group=grp-4] .txt-grp {
+  color: #758cd8;
+}
+
+[data-group=grp-5].bg-grp {
+  background-color: #80ae77;
+}
+[data-group=grp-5].border-grp {
+  border-color: #80ae77;
+}
+[data-group=grp-5].txt-grp {
+  color: #80ae77;
+}
+[data-group=grp-5] .bg-grp {
+  background-color: #80ae77;
+}
+[data-group=grp-5] .border-grp {
+  border-color: #80ae77;
+}
+[data-group=grp-5] .txt-grp {
+  color: #80ae77;
+}
+
+body[data-tool=top-sites] {
+  --hero-img: url("/shared/img/01.jpg");
+}
