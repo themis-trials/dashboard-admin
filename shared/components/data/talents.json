@@ -1,0 +1,256 @@
+{
+  "talents": [
+    {
+      "nom": "Prévoyant",
+      "rang": "D",
+      "description": "Permet d'obtenir 4 Poké Balls par quinzaine.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/ball/poke.png"
+    },
+    {
+      "nom": "Prof en devenir",
+      "rang": "D",
+      "description": "Permet, une fois par semaine, de rédiger une description d'un Pokémon rencontré en RP pour compléter le Pokédex régional. Chaque description validée par le staff rapporte 10 PO. Une même espèce ne peut être documentée qu'une seule fois.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/sonias-book.png"
+    },
+    {
+      "nom": "Brocanteur",
+      "rang": "D",
+      "description": "Permet de vendre au staff certains objets inutilisés contre la moitié de leur prix.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/rusted-shield.png"
+    },
+    {
+      "nom": "Ami des Pokémons",
+      "rang": "D",
+      "description": "Augmente de 10% les chances de capture des Pokémon sauvages.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/medicine/sweet-heart.png"
+    },
+    {
+      "nom": "Sociable",
+      "rang": "C",
+      "description": "Permet de faire apparaître un Pokémon supplémentaire lors de chaque capture.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/other-item/poke-doll.png"
+    },
+    {
+      "nom": "Navigateur",
+      "rang": "C",
+      "description": "Débloque l'accès aux explorations de l'Archipel Kharadra.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/auroraticket.png"
+    },
+    {
+      "nom": "Compagnon d’aventure",
+      "rang": "C",
+      "description": "Permet de choisir un autre personnage du forum. Chaque RP terminé avec ce personnage apportera un bonus de 20 PO.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/roto/friendship.png"
+    },
+    {
+      "nom": "VIP",
+      "rang": "C",
+      "description": "Débloque l’accès à la boutique VIP.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/other-item/gold-bottle-cap.png"
+    },
+    {
+      "nom": "Recyclage",
+      "rang": "C",
+      "description": "Permet de récupérer occasionnellement (30% de chance) une Poké Ball après un échec de capture.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/ball/premier.png"
+    },
+    {
+      "nom": "Chef",
+      "rang": "C",
+      "description": "Permet de cuisiner un plat aléatoire une fois par quinzaine, pouvant augmenter ou diminuer le bonheur d'un Pokémon.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/curry-ingredient/fried-food.png"
+    },
+    {
+      "nom": "Fana de l’évolution",
+      "rang": "B",
+      "description": "Permet d'obtenir 1 objet évolutif aléatoire par quinzaine.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/evo-item/thunder-stone.png"
+    },
+    {
+      "nom": "Marché Noir",
+      "rang": "B",
+      "description": "Débloque les achats et échanges de Pokémon avec les PNJ.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/member-card.png"
+    },
+    {
+      "nom": "Pensionnaire",
+      "rang": "B",
+      "description": "Permet, une fois par quinzaine, de faire se reproduire deux Pokémon de joueurs, à condition d'en posséder au moins un, avec 50 % de chances d'hériter de chacun des deux parents (sauf si l'un des deux est Métamorph).",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/mystery-egg.png"
+    },
+    {
+      "nom": "Passeur de savoir",
+      "rang": "B",
+      "description": "Une fois par quinzaine, permet à un autre joueur de profiter temporairement d'un de vos talents de rang D ou C.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/wise-glasses.png"
+    },
+    {
+      "nom": "Chasseur de primes",
+      "rang": "B",
+      "description": "Chaque quinzaine, permet d’accepter une mission consistant à capturer certaines espèces contre 20/30/40 PO.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/band-autograph.png"
+    },
+    {
+      "nom": "Shasseur",
+      "rang": "B",
+      "description": "Modifie les chances de rencontrer un Pokémon chromatique (de 10% à 15%).",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/shiny-charm.png"
+    },
+    {
+      "nom": "Mentor",
+      "rang": "B",
+      "description": "Permet, une fois par quinzaine, d’offrir une augmentation gratuite de rang D → C à un autre joueur.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/endorsement.png"
+    },
+    {
+      "nom": "Graveur de CD",
+      "rang": "B",
+      "description": "Une fois par quinzaine, permet de fabriquer 1 CT utilisable une fois.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/tm/bug.png"
+    },
+    {
+      "nom": "Changement de programme",
+      "rang": "A",
+      "description": "Une fois par défi d’écurie, permet de remplacer une mission non accomplie du bingo par une nouvelle mission tirée aléatoirement. Le nouveau résultat remplace obligatoirement l’ancien. Une même case ne peut être relancée qu’une seule fois par défi.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/black-glasses.png"
+    },
+    {
+      "nom": "Donneur de capacités",
+      "rang": "A",
+      "description": "Permet d'enseigner une attaque de reproduction / donneur de capacité 1 fois par quinzaine.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/destiny-knot.png"
+    },
+    {
+      "nom": "Expert en Omelette",
+      "rang": "A",
+      "description": "Permet d'obtenir 1 Œuf aléatoire par quinzaine.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/mystery-egg.png"
+    },
+    {
+      "nom": "Parieur",
+      "rang": "A",
+      "description": "Débloque l'échange mystère, permettant d'obtenir un Pokémon au hasard, avec un rang, un statut shiny et un surnom proposés aléatoirement.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/other-item/discount-coupon.png"
+    },
+    {
+      "nom": "Battle Royale",
+      "rang": "A",
+      "description": "Augmente les chances de faire apparaître plusieurs Pokémon lors d'une capture.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/other-item/escape-rope.png"
+    },
+    {
+      "nom": "Radar",
+      "rang": "A",
+      "description": "Une fois par capture, permet de choisir une espèce de chaque rareté présente dans une zone : le Pokémon rencontré sera tiré aléatoirement parmi elles, tout en conservant les proportions relatives.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/poke-radar.png"
+    },
+    {
+      "nom": "Docteur du Jurassique",
+      "rang": "A",
+      "description": "Permet d'obtenir 1 fossile aléatoire par quinzaine.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/fossil/helix.png"
+    },
+    {
+      "nom": "Icône",
+      "rang": "A",
+      "description": "Permet de devenir champion d’arène du type de votre Pokémon signature (à choisir, doit être de rang B minimum). Le personnage doit avoir vaincu 2 champions avant ça et posséder 4 Pokémon du type souhaité rang B.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/amulet-coin.png"
+    },
+    {
+      "nom": "Éleveur d'exception",
+      "rang": "S",
+      "description": "Lors d'une reproduction par le joueur, il peut choisir lequel des deux parents transmettra son espèce au lieu de le déterminer aléatoirement.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/sprayduck.png"
+    },
+    {
+      "nom": "Combattant",
+      "rang": "S",
+      "description": "Permet d'utiliser la Méga-Évolution, les Cristaux Z, le Dynamax ou la Téracristallisation si vous possédez l'objet correspondant.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/choice-band.png"
+    },
+    {
+      "nom": "As dans la manche",
+      "rang": "S",
+      "description": "Lorsqu'il remporte un Coffre d'Écurie, le joueur peut relancer une fois l'un de ses trois tirages. Le meilleur résultat est pris en compte.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/red-card.png"
+    },
+    {
+      "nom": "Traqueur",
+      "rang": "S",
+      "description": "Permet d’augmenter le taux d’apparition des Pokémon du bulletin des terres sauvages.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/wide-lens.png"
+    },
+    {
+      "nom": "Professeur Pokémon",
+      "rang": "S",
+      "description": "Une fois par quinzaine, permet de proposer une mission de recherche à d’autres joueurs ; lorsqu’elle est accomplie pour la première fois, le chercheur et le participant sont tous deux récompensés. (30 PO chacun.)",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/devon-parts.png"
+    },
+    {
+      "nom": "Augmenter la Mise",
+      "rang": "S",
+      "description": "Une fois par sujet de capture, si un lancer de capture est raté, il est automatiquement relancé.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/gold-teeth.png"
+    },
+    {
+      "nom": "Maman Poule",
+      "rang": "S",
+      "description": "Réduit le temps d'éclosion des Œufs de 2 semaines à 1 semaine.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/other-item/galarica-twig.png"
+    },
+    {
+      "nom": "CT Douteuse",
+      "rang": "S",
+      "description": "Permet d’apprendre n’importe quelle attaque (sauf légendaire et attaque signature, à valider au cas par cas avec le staff) à n’importe quel Pokémon, même s'il ne l'apprend pas. Une fois par quinzaine. Pour soi-même.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/unown-report.png"
+    },
+    {
+      "nom": "Cristalliseur",
+      "rang": "X",
+      "description": "Une fois par mois, permet de fabriquer un Cristal Z.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/tapunium-z--held.png"
+    },
+    {
+      "nom": "Joaillier",
+      "rang": "X",
+      "description": "Une fois par mois, permet de fabriquer une Méga-Gemme.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/mega-stone/gardevoirite.png"
+    },
+    {
+      "nom": "Pousseur de fonte",
+      "rang": "X",
+      "description": "Une fois par mois, permet de fabriquer un objet Dynamax ou Gigamax.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/other-item/dynamax-candy.png"
+    },
+    {
+      "nom": "Princesse",
+      "rang": "X",
+      "description": "Une fois par mois, permet de fabriquer un Orbe Téracristal.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/gem/ice.png"
+    },
+    {
+      "nom": "Transmission",
+      "rang": "X",
+      "description": "Une fois par quinzaine, permet d'offrir gratuitement à un autre joueur le bénéfice d'un de ses talents à utilisation unique de rang A ou inférieur. (Ex : Expert en Omelette, Recyclage, Fana de l’évolution.)",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/honor-of-kalos.png"
+    },
+    {
+      "nom": "Aimant à raretés",
+      "rang": "X",
+      "description": "Une fois par quinzaine, une apparition du personnage est tirée uniquement parmi les Pokémon Peu Communs et Rares de la zone, en conservant leur proportion relative.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/hold-item/magnet.png"
+    },
+    {
+      "nom": "Partageur",
+      "rang": "X",
+      "description": "Débloque le Multi Exp permettant de up 2 Pokémon pour le prix d’un.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/exp-share.png"
+    },
+    {
+      "nom": "Rat",
+      "rang": "X",
+      "description": "Réduit légèrement le coût des montées de rang des Pokémon.",
+      "icon": "https://raw.githubusercontent.com/msikma/pokesprite/master/items-outline/key-item/enigmatic-card.png"
+    }
+  ]
+}

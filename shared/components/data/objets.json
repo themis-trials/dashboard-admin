@@ -1,0 +1,2682 @@
+{
+  "balls": [
+    {
+      "nom": "Poké Ball",
+      "description": "Multiplicateur ×1, sans condition.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+      "prix": 5,
+      "boutique": "standard"
+    },
+    {
+      "nom": "Super Ball",
+      "description": "Multiplicateur ×1,5, sans condition.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/great-ball.png",
+      "prix": 10,
+      "boutique": "standard"
+    },
+    {
+      "nom": "Honor Ball",
+      "description": "Multiplicateur ×1, sans condition.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/premier-ball.png",
+      "prix": 5,
+      "boutique": "standard"
+    },
+    {
+      "nom": "Lune Ball",
+      "description": "×3 si le Pokémon évolue grâce à une Pierre Lune. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/moon-ball.png",
+      "prix": 15,
+      "boutique": "standard"
+    },
+    {
+      "nom": "Bis Ball",
+      "description": "×3,5 si l'espèce est déjà enregistrée dans le Pokédex du personnage. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/repeat-ball.png",
+      "prix": 15,
+      "boutique": "standard"
+    },
+    {
+      "nom": "Faiblo Ball",
+      "description": "×3 sur un Pokémon rang D, ×2 rang C et ×1 à partir du rang B.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/nest-ball.png",
+      "prix": 10,
+      "boutique": "standard"
+    },
+    {
+      "nom": "Hyper Ball",
+      "description": "Multiplicateur ×2, sans condition.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ultra-ball.png",
+      "prix": 20,
+      "boutique": "standard"
+    },
+    {
+      "nom": "Safari Ball",
+      "description": "×2 sur les Pokémon Sol ou Combat. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/safari-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Copain Ball",
+      "description": "×2 sur les Pokémon Dragon ou Plante. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/friend-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Niveau Ball",
+      "description": "×2 sur les Pokémon Roche ou Feu. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/level-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Filet Ball",
+      "description": "×2 sur les Pokémon Acier ou Insecte. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/net-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Luxe Ball",
+      "description": "×2 sur les Pokémon Ténèbres ou Psy. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/luxury-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Scuba Ball",
+      "description": "×2 sur les Pokémon Glace ou Eau. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dive-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Rapide Ball",
+      "description": "×2 sur les Pokémon Électrik ou Vol. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/quick-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Sombre Ball",
+      "description": "×2 sur les Pokémon Spectre ou Poison. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Rêve Ball",
+      "description": "×2 sur les Pokémon Fée ou Normal. ×1 sinon.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dream-ball.png",
+      "prix": 15,
+      "boutique": "vip"
+    },
+    {
+      "nom": "Ultra Ball",
+      "description": "×5 uniquement sur les Ultra-Chimères. ×1 sur les autres.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/beast-ball.png",
+      "prix": "",
+      "boutique": "vip"
+    }
+  ],
+  "objets_evolutifs": [
+    {
+      "nom": "Pierre Soleil",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sun-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Lune",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/moon-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Feu",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/fire-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Foudre",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/thunder-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Eau",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/water-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Plante",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/leaf-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Éclat",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shiny-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Nuit",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dusk-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Aube",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dawn-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pierre Glace",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ice-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Roche Royale",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kings-rock.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Peau Métal",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metal-coat.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Écaille Draco",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dragon-scale.png",
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Améliorator",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/up-grade.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "CD Douteux",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dubious-disc.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Protecteur",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/protector.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Électriseur",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/electirizer.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Magmariseur",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/magmarizer.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Tissu Fauche",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/reaper-cloth.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Écaille Belle",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/prism-scale.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Sachet Senteur",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sachet.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Chantibonbon",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/whipped-dream.png",
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Pierre Ovale",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/oval-stone.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Griffe Rasoir",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-claw.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Croc Rasoir",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/razor-fang.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Dent Océan",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/deep-sea-tooth.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Écaille Océan",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/deep-sea-scale.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pomme Sucrée",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/evo-item/sweet-apple.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pomme Acidulée",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/evo-item/tart-apple.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Théière Fêlée",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/evo-item/cracked-pot.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Théière Ébréchée",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/evo-item/chipped-pot.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Bracelet Galanoa",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/evo-item/galarica-cuff.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Couronne Galanoa",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/evo-item/galarica-wreath.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Obsidienne",
+      "description": "",
+      "image": "https://i.imgur.com/me1vY7V.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Bloc de Tourbe",
+      "description": "",
+      "image": "https://i.imgur.com/cn4OgcC.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Fil de Liaison",
+      "description": "",
+      "image": "https://i.imgur.com/45wgWIb.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Armure de la Fortune",
+      "description": "",
+      "image": "https://i.imgur.com/EQvdPV3.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Armure de la Rancune",
+      "description": "",
+      "image": "https://i.imgur.com/qjIOawv.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Pomme Nectar",
+      "description": "",
+      "image": "https://i.imgur.com/hEmD2oU.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Bol Médiocre",
+      "description": "",
+      "image": "https://i.imgur.com/uz4kIZc.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Bol Exceptionnel",
+      "description": "",
+      "image": "https://i.imgur.com/OMANwmY.png",
+      "prix": "",
+      "boutique": "vip"
+    },
+    {
+      "nom": "Alliage Métallique",
+      "description": "",
+      "image": "https://i.imgur.com/5s2dNUZ.png",
+      "prix": "",
+      "boutique": "vip"
+    }
+  ],
+  "fossiles": [
+    {
+      "nom": "Fossile Dôme",
+      "description": "Fossile permettant de restaurer Kabuto.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/dome-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Nautile",
+      "description": "Fossile permettant de restaurer Amonita.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/helix-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Vieil Ambre",
+      "description": "Fossile permettant de restaurer Ptéra.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/old-amber.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Racine",
+      "description": "Fossile permettant de restaurer Lilia.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/root-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Griffe",
+      "description": "Fossile permettant de restaurer Anorith.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/claw-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Crâne",
+      "description": "Fossile permettant de restaurer Kranidos.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/skull-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Armure",
+      "description": "Fossile permettant de restaurer Dinoclier.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/armor-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Plaque",
+      "description": "Fossile permettant de restaurer Carapagos.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cover-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Plume",
+      "description": "Fossile permettant de restaurer Arkéapti.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/plume-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Mâchoire",
+      "description": "Fossile permettant de restaurer Ptyranidur.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/jaw-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Nageoire",
+      "description": "Fossile permettant de restaurer Amagara.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sail-fossil.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Oiseau",
+      "description": "Fossile à combiner pour restaurer un Pokémon fossile.",
+      "image": "https://i.imgur.com/nsNkVHQ.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Poisson",
+      "description": "Fossile à combiner pour restaurer un Pokémon fossile.",
+      "image": "https://i.imgur.com/3carbrn.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Dragon",
+      "description": "Fossile à combiner pour restaurer un Pokémon fossile.",
+      "image": "https://i.imgur.com/tfegj5p.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fossile Aileron",
+      "description": "Fossile à combiner pour restaurer un Pokémon fossile.",
+      "image": "https://i.imgur.com/sRfnS4V.png",
+      "prix": "",
+      "boutique": "indisponible"
+    }
+  ],
+  "ct": [
+    {
+      "nom": "Bélier",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Charme",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Croco Larme",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Hâte",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Coud'Boue",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Grimace",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Abri",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Crocs Feu",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Crocs Éclair",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Crocs Givre",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vibraqua",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Balayage",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Bombe Acide",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Acrobatie",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Survinsecte",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Rafale Psy",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Onde Folie",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Larcin",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Voix Enjôleuse",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Désherbaffe",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Bond",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Douche Froide",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Rayon Chargé",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Danse Flammes",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Façade",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Queue-Poison",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Aéropique",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Piétisol",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Châtiment",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Aboiement",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Griffe Acier",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Météores",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Feuille Magik",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vent Glace",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tir de Boue",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tomberoche",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vampibaiser",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Nitrocharge",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Balayette",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tranch'Air",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Force Ajoutée",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Ombre Nocturne",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Dégommage",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Draco-Queue",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Choc Venin",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Avalanche",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Ténacité",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Change Éclair",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Zénith",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Danse Pluie",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tempête de Sable",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Chute de Neige",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Estocorne",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Choc Psy",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tunnel",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Balle Graine",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Faux-Chage",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Casse-Brique",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Psykoud'Boul",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Demi-Tour",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Griffe Ombre",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tricherie",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Psycho-Croc",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Gonflette",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Lame d'Air",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Plaquage",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Poing Feu",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Poing Éclair",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Poing Glace",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Blabla Dodo",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Bombe Graine",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Boule Élek",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vampi-Poing",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Protection",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Mur Lumière",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Boule Roc",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Cascade",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Draco-Griffe",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Éclat Magique",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Métronome",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Nœud Herbe",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Cage Éclair",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Direct Toxik",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Trépignement",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Repos",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Éboulement",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Provoc",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Danse-Lames",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Big Splash",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Picots",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Pics Toxik",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Possessif",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Luminocanon",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vibrobscur",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vampirisme",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Ondes Étranges",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vol",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Échange",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tête de Fer",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Danse Draco",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Rayon Gemme",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Détricanon",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Clonage",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Mur de Fer",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Plaie Croix",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tunnelier",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Feu Follet",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Mâchouille",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tour de Magie",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Aqua-Brèche",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Giga-Sangsue",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Aurasphère",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vent Arrière",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Ball'Ombre",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Draco-Choc",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Piège de Roc",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Mégaphone",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Canicule",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Éco-Sphère",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Psyko",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tacle Lourd",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Encore",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Surf",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Cryo-Pirouette",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Lance-Flammes",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tonnerre",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Câlinerie",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Amnésie",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Plénitude",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Coup d'Main",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Boule Pollen",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Relais",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Telluriforce",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Contre",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Laser Glace",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Champ Électrifié",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Champ Herbu",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Champ Psychique",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Champ Brumeux",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Machination",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Déflagration",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Hydrocanon",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Blizzard",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Aire de Feu",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Aire d'Eau",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Aire d'Herbe",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Éclair Fou",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Bombe Beurk",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Séisme",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Lame de Roc",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Hantise",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Giga Impact",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Rafale Feu",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Hydroblast",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Végé-Attaque",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Colère",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Surchauffe",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Exploforce",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Tempête Verte",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Vent Violent",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Distorsion",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Bourdon",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Ultralaser",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Rapace",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Boutefeu",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Fatal-Foudre",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Close Combat",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Lance-Soleil",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Draco-Météore",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Métalaser",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    },
+    {
+      "nom": "Téra Explosion",
+      "description": "",
+      "image": null,
+      "prix": "",
+      "boutique": "standard"
+    }
+  ],
+  "oeuf": [
+    {
+      "nom": "Téra Explosion",
+      "description": "Contient un Pokémon qui éclora après incubation.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/egg.png",
+      "prix": null,
+      "boutique": "indisponible"
+    }
+  ],
+  "autre": [
+    {
+      "nom": "Poignet Dynamax",
+      "description": "Permet à un Dresseur d'utiliser le Dynamax.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/key-item/dynamax-band.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Orbe Téracristal",
+      "description": "Permet la Téracristallisation d'un Pokémon.",
+      "image": "https://i.imgur.com/EfOGZPN.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Multi Exp",
+      "description": "Permet de up 2 Pokémon du même rang pour le prix d’un.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/exp-share.png",
+      "prix": "",
+      "boutique": "indisponible"
+    }
+  ],
+  "cristal-z": [
+    {
+      "nom": "Normazélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/normalium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Pyrozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/firium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Aquazélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/waterium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Voltazélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/electrium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Florazélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/grassium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Cryozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/icium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Combazélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/fightinium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Toxizélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/poisonium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Terrazélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/groundium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Aérozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/flyinium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Psychézélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/psychium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Insectozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/buginium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Rocazélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/rockium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Spectrozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/ghostium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Dracozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/dragonium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ténébrozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/darkinium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Métallozélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/steelium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Nymphézélite",
+      "description": "Cristal Z permettant une capacité Z du type correspondant.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/fairium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Pikazélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/pikanium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Pikachazélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/pikashunium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Évolizélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/eevium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ronflézélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/snorlium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Archézélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/mewnium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Oratozélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/decidium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Félinzélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/incinium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Otaquinzélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/primarium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Tokozélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/tapunium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Marshadozélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/marshadium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Aloraïzélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/aloraichium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Mimiquizélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/mimikium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Lougarozélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/lycanium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ékaïzélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/kommonium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Solgazélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/solganium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Lunazélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/lunalium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ultranécrozélite",
+      "description": "Cristal Z permettant une capacité Z propre à certains Pokémon.",
+      "image": "https://raw.githubusercontent.com/msikma/pokesprite/master/items/z-crystals/ultranecrozium-z--held.png",
+      "prix": "",
+      "boutique": "indisponible"
+    }
+  ],
+  "mega-gemmes": [
+    {
+      "nom": "Florizarrite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Dracaufite X",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charizardite-x.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Dracaufite Y",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charizardite-y.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Tortankite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/blastoisinite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Dardargnite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/beedrillite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Roucarnagite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pidgeotite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Alakazamite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/alakazite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Flagadossite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/slowbronite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ectoplasmite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/gengarite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Kangourexite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/kangaskhanite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Scarabrutite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/pinsirite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Léviatorite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/gyaradosite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ptéraïte",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aerodactylite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Mewtwoïte X",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mewtwonite-x.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Mewtwoïte Y",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mewtwonite-y.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Pharampite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ampharosite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Steelixite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/steelixite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Cizayoxite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/scizorite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Scarhinoïte",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heracronite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Démolossite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/houndoominite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Tyranocivite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tyranitarite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Jungkite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sceptilite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Braségalite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/blazikenite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Laggronite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/swampertite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Gardevoirite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/gardevoirite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ténéfixite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sablenite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Mysdibulite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mawilite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Galekingite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/aggronite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Charminite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/medichamite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Élecsprintite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/manectite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Sharpedite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/sharpedonite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Caméruptite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/cameruptite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Altarianite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/altarianite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Branettite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/banettite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Absolite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/absolite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Oniglalite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/glalitite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Drattakite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/salamencite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Métalossite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/metagrossite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Latiasite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/latiasite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Latiosite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/latiosite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Lockpinite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lopunnite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Carchacrokite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/garchompite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Lucarite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/lucarionite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Blizzarite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/abomasite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Gallamite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/galladite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Nanméouïte",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/audinite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Diancite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/diancite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Absolite Z",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Airmurite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Aligatueurite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Amphinolite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Baggaïdite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Blindépiquite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Brutalibrite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Brutapodite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Carchacrokite Z",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Crabominablite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Darkraïte",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Dracolossite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Draïeulite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Empiflorite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Éokite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Étouraptorite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Floettite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Floréclatite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Glaivodite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Golemastokite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Golgopathite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Goupelinite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Heatranite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Hexadronite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Kravarekite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Lucarite Z",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Lugulabrite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Magearnite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Méganiumite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Mélodelfite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Minotaupite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Mistigrixite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Momartikite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Néméliosite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Nigirigonite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Ohmassacrite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Raichuïte X",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Raichuïte Y",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Roitiflamite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Sarmuraïte",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Scovilainite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Sepiatrocite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Starossite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Zeraorite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Zygardite",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    }
+  ],
+  "dynamax": [
+    {
+      "nom": "Normalomax",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Gardomax",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charizardite-x.png",
+      "prix": "",
+      "boutique": "indisponible"
+    }
+  ],
+  "teracristal": [
+    {
+      "nom": "Diamants sertis",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/venusaurite.png",
+      "prix": "",
+      "boutique": "indisponible"
+    },
+    {
+      "nom": "Fleurs",
+      "description": "Permet la Méga-Évolution du Pokémon correspondant.",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/charizardite-x.png",
+      "prix": "",
+      "boutique": "indisponible"
+    }
+  ]
+}
