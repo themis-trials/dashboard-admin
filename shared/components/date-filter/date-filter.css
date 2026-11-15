@@ -1,0 +1,172 @@
+.date-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.date-filter__toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--bg-secondary, #eaeaea);
+}
+.date-filter__toggle-indicator {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc((100% - 8px) / 3);
+  border-radius: 999px;
+  background: var(--bg-orange, #426b9b);
+  transition: transform 250ms ease;
+}
+.date-filter__toggle-indicator[data-mode=apres] {
+  transform: translateX(100%);
+}
+.date-filter__toggle-indicator[data-mode=entre] {
+  transform: translateX(200%);
+}
+.date-filter__mode {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  padding: 10px 6px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+.date-filter__mode.is-active {
+  color: #fff;
+}
+.date-filter__selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.date-filter__selection-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.date-filter__selection-item span {
+  font-size: 11px;
+  opacity: 0.65;
+}
+.date-filter__selection-item strong {
+  font-size: 13px;
+}
+.date-filter__calendar {
+  position: relative;
+  padding: 12px;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 12px;
+}
+.date-filter__navigation {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+}
+.date-filter__navigation button {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--bg-secondary, #eee);
+  color: inherit;
+  cursor: pointer;
+}
+.date-filter__months {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.date-filter__months.is-range {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.date-filter__month {
+  min-width: 0;
+}
+.date-filter__month-title {
+  margin: 0 0 16px;
+  font-size: 14px;
+  text-align: center;
+}
+.date-filter__weekdays, .date-filter__days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 3px;
+}
+.date-filter__weekdays {
+  margin-bottom: 6px;
+}
+.date-filter__weekdays span {
+  padding: 6px 0;
+  font-size: 10px;
+  text-align: center;
+  opacity: 0.6;
+}
+.date-filter__empty {
+  aspect-ratio: 1;
+}
+.date-filter__day {
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease;
+}
+.date-filter__day:hover {
+  background: var(--bg-secondary, #eee);
+}
+.date-filter__day.is-today {
+  outline: 1px solid var(--bg-orange, #426b9b);
+  outline-offset: -2px;
+}
+.date-filter__day.is-selected, .date-filter__day.is-start, .date-filter__day.is-end {
+  background: var(--bg-orange, #426b9b);
+  color: #fff;
+  outline: none;
+}
+.date-filter__day.is-in-range {
+  border-radius: 0;
+  background: color-mix(in srgb, var(--bg-orange, #426b9b) 18%, transparent);
+}
+.date-filter__reset {
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .date-filter__months.is-range {
+    grid-template-columns: 1fr;
+  }
+  .date-filter__mode {
+    font-size: 10px;
+  }
+}
